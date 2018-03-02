@@ -78,7 +78,7 @@ module wall_block_load(f, name, path="../") {
             y = -1;
         }
     }
-    color("Grey") rotate([side < 4 ? side*90:0,side == 4 ? -90 : side == 5 ? 90:0,angle*90]) import(str(path, "/", name, "_", block < 10 ? "0":"", block, ".stl"));
+    color("Grey") rotate([side < 4 ? side*90:0,side == 4 ? -90 : side == 5 ? 90:0,angle*90]) import(str(path, "/", name, ".", block < 10 ? "0":"", block, ".stl"));
 }
 
 num = 0;
